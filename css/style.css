@@ -1,0 +1,264 @@
+:root {
+  --purple: #5a2d82;
+  --pink: #e83e8c;
+  --soft-bg: #f6f2fa;
+  --dark: #111;
+}
+
+/* ================= BASE ================= */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 72px;
+  background: #fff;
+  color: #222;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  background: linear-gradient(135deg, #2b0f3f, #000);
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+/* ================= HERO (HOMEPAGE ONLY) ================= */
+
+.hero {
+  min-height: calc(100vh - 72px);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.35),
+    rgba(0,0,0,0.05)
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1,
+.hero p {
+  color: #fff;
+}
+
+/* ================= SUBPAGE HEADER (THIS WAS MISSING) ================= */
+
+.page-header {
+  background: linear-gradient(135deg, var(--purple), var(--pink));
+  color: #fff;
+  padding: 70px 0 60px;
+}
+
+.page-header h1 {
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  margin-bottom: 0;
+  max-width: 720px;
+}
+
+/* Pull content closer after header */
+.page-header + section {
+  padding-top: 45px;
+}
+
+/* ================= SECTIONS ================= */
+
+.section {
+  padding: 60px 0;
+}
+
+.section-soft {
+  background: var(--soft-bg);
+}
+
+.section-cta {
+  padding: 50px 0;
+  background: linear-gradient(180deg, #ffffff, #f5eef9);
+}
+
+/* ================= HEADINGS ================= */
+
+h1, h2, h3 {
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.4px;
+}
+
+.section-title {
+  color: var(--purple);
+  font-weight: 600;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--pink), var(--purple));
+  border: none;
+  border-radius: 30px;
+  padding: 12px 32px;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(232,62,140,0.35);
+}
+
+/* ================= CARDS ================= */
+
+.card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.08);
+}
+
+.card-body {
+  padding: 28px;
+}
+
+/* Program cards (homepage / programs) */
+.program-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.program-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.program-card h4 {
+  padding: 24px 16px;
+  margin: 0;
+}
+
+/* ================= FOUNDER ================= */
+
+.founder-img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 28px 0;
+}
+
+/* ===== STEP FLOW WITH ARROWS ===== */
+
+.step-flow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.step-item {
+  margin-bottom: 30px;
+}
+
+.step-circle {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #5a2d82, #e83e8c);
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-arrow {
+  font-size: 32px;
+  color: #e83e8c;
+  align-self: center;
+  margin: 0 10px;
+}
+
+/* ===== HOMEPAGE FEATURE BLOCKS ===== */
+
+.feature-section {
+  background: linear-gradient(
+    135deg,
+    rgba(90,45,130,0.08),
+    rgba(232,62,140,0.08)
+  );
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 28px;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #5a2d82, #e83e8c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.feature-card h3 {
+  margin-bottom: 15px;
+}
+``
+
+/* ===== SIMPLE WHITE ICONS IN GRADIENT CIRCLE ===== */
+
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #5a2d82, #e83e8c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon svg {
+  width: 28px;
+  height: 28px;
+  fill: #ffffff;
+}
